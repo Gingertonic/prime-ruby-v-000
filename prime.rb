@@ -24,7 +24,7 @@ def prime?(num)
         end
         y += 1
       end
-        return false
+    return false
     end
   end
 end
