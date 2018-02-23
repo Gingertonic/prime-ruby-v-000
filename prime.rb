@@ -4,6 +4,6 @@ def prime?(num)
     return false
   else
     check = (1...num).to_a
-    check.each {|x| !(x * x == num)}
+    check.map {|x| !(x * x == num)}
   end
 end
