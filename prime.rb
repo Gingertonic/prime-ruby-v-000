@@ -14,7 +14,7 @@ def prime?(num)
     return false
   else
     check = (1...num).to_a
-    y += 0
+    y = 0
     check.each do |x|
       while y < check.length do
         if check[y] * x == num
