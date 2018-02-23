@@ -30,13 +30,18 @@
 # end
 
 def prime?(num)
-  x_array = (1...num/num).to_a
-  x_array.each do |x|
-    if num % x == 0
-      return false
-    else
-      puts "Try again"
+  if num <= 1
+    return false
+  else
+    x_array = (1...num/num).to_a
+    x_array.each do |x|
+      if num % x == 0
+        return false
+      else
+        puts "Try again"
+      end
     end
+    return true
   end
 end
 
