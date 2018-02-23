@@ -38,7 +38,7 @@ def prime?(num)
     is_it = x_array.map do |x|
       num % x == 0
     end
-    is_it.includes?("false")
+    is_it.include?("false")
   end
 end
 
