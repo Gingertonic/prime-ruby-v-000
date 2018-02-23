@@ -7,8 +7,6 @@ def prime?(num)
     check.each do |x|
       if x * x = num
         return true
-      else
-        return false
       end
     end
   end
