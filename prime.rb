@@ -3,7 +3,7 @@ def prime?(num)
   if num < 1
     return false
   else
-    check = (1...num).to_a
+    check = (2...num).to_a
     check.each do |x|
       if x * x = num
         return true
