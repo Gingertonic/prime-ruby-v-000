@@ -9,22 +9,33 @@
 #   end
 # end
 
+# def prime?(num)
+#   if num <= 1
+#     return false
+#   else
+#     check = (1...num).to_a
+#     y = 0
+#     check.each do |x|
+#       while y < check.length do
+#         if check[y] * x == num
+#           puts "Try again"
+#         else
+#           return true
+#         end
+#         y += 1
+#       end
+#     return false
+#     end
+#   end
+# end
+
 def prime?(num)
-  if num <= 1
-    return false
-  else
-    check = (1...num).to_a
-    y = 0
-    check.each do |x|
-      while y < check.length do
-        if check[y] * x == num
-          puts "Try again"
-        else
-          return true
-        end
-        y += 1
-      end
-    return false
+  x_array = (1...num/num).to_a
+  x_array.each do |x|
+    if num % x == 0
+      return false
+    else
+      puts "Try again"
     end
   end
 end
