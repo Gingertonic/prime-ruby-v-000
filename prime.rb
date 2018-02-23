@@ -35,7 +35,7 @@ def prime?(num)
     return false
   else
     binding.pry
-    x_array = (1...num/num).to_a
+    x_array = (1...(num/num)).to_a
     x_array.each do |x|
       if num % x == 0
         return false
