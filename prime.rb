@@ -1,3 +1,4 @@
+require "pry"
 # # Add  code here!
 # def square?(num)
 #   if num <= 1
@@ -33,6 +34,7 @@ def prime?(num)
   if num <= 1
     return false
   else
+    binding.pry
     x_array = (1...num/num).to_a
     x_array.each do |x|
       if num % x == 0
