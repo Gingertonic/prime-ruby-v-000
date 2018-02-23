@@ -34,7 +34,7 @@ def prime?(num)
   if num <= 1
     return false
   else
-    x_array = (1...num).to_a
+    x_array = (2...num).to_a
     is_it = x_array.map do |x|
       num % x == 0
     end
