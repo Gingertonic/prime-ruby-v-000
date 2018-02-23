@@ -7,5 +7,4 @@ def prime?(num)
     yesno = check.find {|x| (x * x == num)}
     !yesno
   end
-
 end
