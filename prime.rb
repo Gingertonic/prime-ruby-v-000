@@ -47,6 +47,8 @@ def prime?(num)
   end
 end
 
+prime?(4)
+
 # def find_the_cheese(recipe) 
 #   cheese_types = ["cheddar", "gouda", "camembert"] 
 #   recipe.each do |ingr|
