@@ -34,7 +34,6 @@ def prime?(num)
   if num <= 1
     return false
   else
-
     x_array = (1...num).to_a
     x_array.each do |x|
       if num % x == 0
