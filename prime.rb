@@ -1,5 +1,5 @@
 # Add  code here!
-def prime?(num)
+def square?(num)
   if num <= 1
     return false
   else
